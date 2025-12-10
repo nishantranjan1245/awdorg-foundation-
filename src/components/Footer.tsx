@@ -1,6 +1,6 @@
 import { Heart, MapPin, Mail, Phone, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
-import awdorgFooterIcon from "@/assets/awdorg-footer-icon.png";
+import awdorgFooterIcon from "@/assets/icon.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -9,7 +9,6 @@ const Footer = () => {
     { name: "Donate", href: "/donate" },
     { name: "Volunteer", href: "/volunteer" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
   ];
 
   const programs = [

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
-import awdorgIcon from "@/assets/awdorg-icon.png";
+import awdorgIcon from "@/assets/icon.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,7 +64,7 @@ const Header = () => {
               <img 
                 src={awdorgIcon} 
                 alt="Awdorg Foundation" 
-                className="w-14 h-14 sm:w-16 sm:h-16 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110" 
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110" 
               />
             </div>
             <div className="flex flex-col">
