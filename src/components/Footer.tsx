@@ -1,6 +1,6 @@
 import { Heart, MapPin, Mail, Phone, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
-import awdorgFooterIcon from "@/assets/icon.png";
+import awdorgFooterIcon from "@/assets/awdorg-footer-logo.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -35,15 +35,24 @@ const Footer = () => {
 
   return (
     <footer className="bg-foreground text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
-          <div className="col-span-2 lg:col-span-2">
-            <Link to="/" className="flex items-center gap-4 mb-6 group">
-              <img src={awdorgFooterIcon} alt="Awdorg Foundation" className="w-24 h-24 object-contain" />
-              <span className="font-display text-2xl font-bold text-primary">
-                Awdorg Foundation
-              </span>
-            </Link>
+  <div className="container mx-auto px-4 py-16">
+    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+
+      <div className="col-span-2 lg:col-span-2">
+        <Link to="/" className="flex items-center gap-4 mb-6 group">
+          <img
+            src={awdorgFooterIcon}
+            alt="Awdorg Foundation"
+            className="w-24 h-24 object-contain"
+          />
+
+          {/* 🔥 Gradient Text Added */}
+          <span
+            className="font-display text-2xl font-bold bg-gradient-to-r from-[#F9A825] to-[#E65100] bg-clip-text text-transparent"
+          >
+            Awdorg Foundation
+          </span>
+        </Link>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">Awdorg Foundation works to support women through safety initiatives and self-reliance programs, helping them live safer and more independent lives.</p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (

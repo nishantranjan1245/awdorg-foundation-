@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link, useLocation } from "react-router-dom";
-import awdorgIcon from "@/assets/icon.png";
+import awdorgIcon from "@/assets/awdorg-header-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,20 +59,27 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 sm:gap-3 group relative">
-            <div className="relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <img 
-                src={awdorgIcon} 
-                alt="Awdorg Foundation" 
-                className="w-16 h-16 sm:w-20 sm:h-20 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110" 
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display text-sm sm:text-xl font-bold text-primary">
-                Awdorg Foundation
-              </span>
-            </div>
-          </Link>
+  <div className="relative">
+    <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    
+    <img 
+      src={awdorgIcon} 
+      alt="Awdorg Foundation" 
+      className="w-16 h-16 sm:w-20 sm:h-20 object-contain relative z-10 transition-transform duration-300 group-hover:scale-110" 
+    />
+  </div>
+
+  <div className="flex flex-col">
+    
+    {/* 🔥 Gradient Text Added Here */}
+    <span
+      className="font-display text-sm sm:text-xl font-bold bg-gradient-to-r from-[#F9A825] to-[#E65100] bg-clip-text text-transparent"
+    >
+      Awdorg Foundation
+    </span>
+
+  </div>
+</Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
